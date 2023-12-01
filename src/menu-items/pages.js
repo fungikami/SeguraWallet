@@ -41,10 +41,20 @@ const pages = {
     {
       id: 'pay',
       title: 'Pagar',
-      type: 'item',
+      type: 'collapse',
       url: '/pay',
       icon: icons.CardMembershipIcon,
-      breadcrumbs: true
+      breadcrumbs: true,
+      children: [
+        {
+          id: 'segura',
+          title: 'Pagar a otro Segura',
+          type: 'item',
+          url: '/pay/segura',
+          icon: icons.CardMembershipIcon,
+          breadcrumbs: true
+        }
+      ]
     },
     {
       id: 'accounts',
