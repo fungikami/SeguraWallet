@@ -4,6 +4,7 @@ import { useState } from 'react';
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import { Avatar, Button, Card, Grid, ListItemIcon, Menu, MenuItem, Typography } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
 
 // assets
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
@@ -45,7 +46,9 @@ const FollowerCard = ({ avatar, follow, location, name }) => {
         <Grid item xs={12}>
           <Grid container spacing={2}>
             <Grid item>
-              <Avatar alt="User 1" src={avatarImage} />
+              <Avatar alt="User 1" src={avatarImage}>
+                <PersonIcon />
+              </Avatar>
             </Grid>
             <Grid item xs zeroMinWidth>
               <Typography
@@ -112,7 +115,7 @@ const FollowerCard = ({ avatar, follow, location, name }) => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           {follow === 2 ? (
             <Button variant="contained" fullWidth startIcon={<PersonAddTwoToneIcon />}>
               Follow Back
@@ -122,7 +125,7 @@ const FollowerCard = ({ avatar, follow, location, name }) => {
               Followed
             </Button>
           )}
-        </Grid>
+        </Grid> */}
       </Grid>
     </Card>
   );

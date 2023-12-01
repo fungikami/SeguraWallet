@@ -1,14 +1,14 @@
 // third-party
 import { FormattedMessage } from 'react-intl';
 import InsightsIcon from '@mui/icons-material/Insights';
-import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import CardMembershipIcon from '@mui/icons-material/CardMembership';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import SsidChartIcon from '@mui/icons-material/SsidChart';
 
 // constant
 const icons = {
   InsightsIcon,
-  AccountBalanceWalletIcon,
+  SsidChartIcon,
   CardMembershipIcon,
   AccountBalanceIcon
 };
@@ -31,11 +31,11 @@ const pages = {
       breadcrumbs: true
     },
     {
-      id: 'receive',
-      title: 'Recibir',
+      id: 'analysis',
+      title: 'Análisis',
       type: 'item',
-      url: '/receive',
-      icon: icons.AccountBalanceWalletIcon,
+      url: '/analysis',
+      icon: icons.SsidChartIcon,
       breadcrumbs: true
     },
     {

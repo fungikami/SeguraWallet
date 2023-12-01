@@ -33,6 +33,7 @@ import Layout from 'layout';
 import Page from 'components/ui-component/Page';
 import MainCard from 'components/ui-component/cards/MainCard';
 import RevenueCard from 'components/ui-component/cards/RevenueCard';
+import FollowerCard from 'components/ui-component/cards/FollowerCard';
 import { gridSpacing } from 'store/constant';
 import { Stack } from '@mui/system';
 
@@ -177,9 +178,9 @@ const SamplePage = () => {
         </Carousel>
       </MainCard>
       <Divider sx={{ my: 1 }} />
-      <MainCard title="Transacciones">
-        <Grid container spacing={gridSpacing}>
-          <Grid item xs={12} md={8}>
+      <Grid container spacing={gridSpacing}>
+        <Grid item xs={12} md={8}>
+          <MainCard title="Transacciones">
             <Box sx={{ width: '100%' }}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -224,29 +225,18 @@ const SamplePage = () => {
                 </TableContainer>
               </CustomTabPanel>
             </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Stack spacing={2}>
-              <MainCard title="Recibe pagos en otras monedas">
-                <Typography variant="body2">
-                  Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa.
-                </Typography>
-                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-                  Solicitar Nueva Moneda
-                </Button>
-              </MainCard>
-              <MainCard title="Obtén las divisas que necesites">
-                <Typography variant="body2">
-                  Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa.
-                </Typography>
-                <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-                  Obtener Divisas
-                </Button>
-              </MainCard>
-            </Stack>
-          </Grid>
+          </MainCard>
         </Grid>
-      </MainCard>
+        <Grid item xs={12} md={4}>
+          <MainCard title="Mis Contactos">
+            <FollowerCard avatar={null} name="chus🐙" location="La Victoria, Venezuela" />
+            <FollowerCard avatar={null} name="Leonel" location="Caracas, Venezuela" />
+            <FollowerCard avatar={null} name="Waleria" location="Caracas, Venezuela" />
+            <FollowerCard avatar={null} name="Panqueva" location="Charallave, Venezuela" />
+            <FollowerCard avatar={null} name="Kami" location="Caracas, Venezuela" />
+          </MainCard>
+        </Grid>
+      </Grid>
     </Page>
   );
 };
