@@ -18,7 +18,7 @@ const RevenueCard = ({ primary, secondary, content, iconPrimary, color, img }) =
       sx={{
         background:
           // Degradado del color a la izquierda
-          `linear-gradient(90deg, ${color} 0%, #EDE7F6 100%)`,
+          `linear-gradient(90deg, ${color} 30%, #EDE7F6 100%)`,
         position: 'relative',
         color: '#fff',
         height: '200px'
@@ -40,7 +40,14 @@ const RevenueCard = ({ primary, secondary, content, iconPrimary, color, img }) =
           }}
         >
           {/* {primaryIcon} */}
-          <img src={img} alt="logo" width={100} height={100} />
+          <img
+            src={img}
+            alt="logo"
+            width={100}
+            height={100}
+            // lower saturation and opacity and blend with background
+            style={{ filter: 'saturate(1)', opacity: '0.4', mixBlendMode: 'multiply' }}
+          />
         </Typography>
         <Grid container direction={matchDownXs ? 'column' : 'row'} spacing={1}>
           <Grid item xs={12}>
@@ -53,7 +60,7 @@ const RevenueCard = ({ primary, secondary, content, iconPrimary, color, img }) =
               {secondary}
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ mt: 5, cursor: 'pointer' }}>
             <Typography variant="h4" color="inherit">
               {content}
             </Typography>
