@@ -22,7 +22,7 @@ export default function Document() {
         <meta property="og:title" content="Berry - React Material Dashboard Template" />
         <meta
           property="og:description"
-          content="Berry Dashboard is made for the faster web application development built using Material-UI, Reactjs, Redux & Hook API."
+          content="Segura Wallet es una billetera digital que te permite realizar pagos y transferencias de manera rápida y segura."
         />
         <meta property="og:image" content="https://berrydashboard.io/og-image/og-facebook.png" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -35,7 +35,7 @@ export default function Document() {
         <meta property="twitter:image" content="https://berrydashboard.io/og-image/og-twitter.png" />
         <meta name="twitter:creator" content="@codedthemes" />
 
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/assets/images/logo.png" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
