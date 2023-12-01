@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Link from 'Link';
+import { useRouter } from 'next/router';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -37,6 +38,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
 const JWTLogin = ({ loginProp, ...others }) => {
   const theme = useTheme();
+  const router = useRouter();
 
   const { login } = useAuth();
   const scriptedRef = useScriptRef();
@@ -84,7 +86,7 @@ const JWTLogin = ({ loginProp, ...others }) => {
       {({ errors, handleBlur, handleChange, handleSubmit, isSubmitting, touched, values }) => (
         <form noValidate onSubmit={handleSubmit} {...others}>
           <FormControl fullWidth error={Boolean(touched.email && errors.email)} sx={{ ...theme.typography.customInput }}>
-            <InputLabel htmlFor="outlined-adornment-email-login">Email Address / Username</InputLabel>
+            <InputLabel htmlFor="outlined-adornment-email-login">Correo Electrónico / Usuario</InputLabel>
             <OutlinedInput
               id="outlined-adornment-email-login"
               type="email"
@@ -102,7 +104,7 @@ const JWTLogin = ({ loginProp, ...others }) => {
           </FormControl>
 
           <FormControl fullWidth error={Boolean(touched.password && errors.password)} sx={{ ...theme.typography.customInput }}>
-            <InputLabel htmlFor="outlined-adornment-password-login">Password</InputLabel>
+            <InputLabel htmlFor="outlined-adornment-password-login">Contraseña</InputLabel>
             <OutlinedInput
               id="outlined-adornment-password-login"
               type={showPassword ? 'text' : 'password'}
@@ -139,12 +141,12 @@ const JWTLogin = ({ loginProp, ...others }) => {
                 control={
                   <Checkbox checked={checked} onChange={(event) => setChecked(event.target.checked)} name="checked" color="primary" />
                 }
-                label="Keep me logged in"
+                label="Mantener la sesión"
               />
             </Grid>
             <Grid item>
               <Typography variant="subtitle1" component={Link} href="/forgot" color="secondary" sx={{ textDecoration: 'none' }}>
-                Forgot Password?
+                ¿Olvidaste tu contraseña?
               </Typography>
             </Grid>
           </Grid>
@@ -156,8 +158,18 @@ const JWTLogin = ({ loginProp, ...others }) => {
           )}
           <Box sx={{ mt: 2 }}>
             <AnimateButton>
-              <Button color="secondary" disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained">
-                Sign In
+              <Button
+                color="secondary"
+                disabled={isSubmitting}
+                fullWidth
+                size="large"
+                variant="contained"
+                onClick={
+                  // Redirige a /home
+                  () => router.push('/home')
+                }
+              >
+                Ingresa
               </Button>
             </AnimateButton>
           </Box>
