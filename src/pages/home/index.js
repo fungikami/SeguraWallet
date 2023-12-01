@@ -147,9 +147,9 @@ const SamplePage = () => {
         >
           <Grid mx={2}>
             <RevenueCard
-              primary="MERCANTIL"
+              primary="Mercantil"
               secondary="10.5 BS"
-              content="Cuentas receptores >"
+              content="Ver movimientos >"
               iconPrimary={EuroIcon}
               color={theme.palette.primary.main}
               img="/assets/images/mercantil.png"
@@ -157,9 +157,9 @@ const SamplePage = () => {
           </Grid>
           <Grid mx={2}>
             <RevenueCard
-              primary="BANESCO"
+              primary="Banesco"
               secondary="0.5 BS"
-              content="Cuentas receptores >"
+              content="Ver movimientos >"
               iconPrimary={MonetizationOnTwoToneIcon}
               color="#108c64"
               img="/assets/images/banesco.png"
@@ -167,9 +167,9 @@ const SamplePage = () => {
           </Grid>
           <Grid mx={2}>
             <RevenueCard
-              primary="BANCAMIGA"
+              primary="Bancamiga"
               secondary="100.5 BS"
-              content="Cuentas receptores >"
+              content="Ver movimientos >"
               iconPrimary={EuroIcon}
               color="#0468a8"
               img="/assets/images/bancamiga.png"
