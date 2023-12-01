@@ -6,7 +6,7 @@ import { Card, CardContent, Grid, Typography, useMediaQuery } from '@mui/materia
 
 // =============================|| REVENUE CARD ||============================= //
 
-const RevenueCard = ({ primary, secondary, content, iconPrimary, color }) => {
+const RevenueCard = ({ primary, secondary, content, iconPrimary, color, img }) => {
   const theme = useTheme();
   const matchDownXs = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -14,7 +14,16 @@ const RevenueCard = ({ primary, secondary, content, iconPrimary, color }) => {
   const primaryIcon = iconPrimary ? <IconPrimary fontSize="large" /> : null;
 
   return (
-    <Card sx={{ background: color, position: 'relative', color: '#fff' }}>
+    <Card
+      sx={{
+        background:
+          // Degradado del color a la izquierda
+          `linear-gradient(90deg, ${color} 0%, #EDE7F6 100%)`,
+        position: 'relative',
+        color: '#fff',
+        height: '200px'
+      }}
+    >
       <CardContent>
         <Typography
           variant="body2"
@@ -30,21 +39,22 @@ const RevenueCard = ({ primary, secondary, content, iconPrimary, color }) => {
             }
           }}
         >
-          {primaryIcon}
+          {/* {primaryIcon} */}
+          <img src={img} alt="logo" width={100} height={100} />
         </Typography>
         <Grid container direction={matchDownXs ? 'column' : 'row'} spacing={1}>
           <Grid item xs={12}>
-            <Typography variant="h5" color="inherit">
+            <Typography variant="h3" color="inherit">
               {primary}
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography variant="h3" color="inherit">
+            <Typography variant="h1" color="inherit">
               {secondary}
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography variant="subtitle2" color="inherit">
+            <Typography variant="h4" color="inherit">
               {content}
             </Typography>
           </Grid>
@@ -59,7 +69,8 @@ RevenueCard.propTypes = {
   secondary: PropTypes.string,
   content: PropTypes.string,
   iconPrimary: PropTypes.object,
-  color: PropTypes.string
+  color: PropTypes.string,
+  img: PropTypes.string
 };
 
 export default RevenueCard;
