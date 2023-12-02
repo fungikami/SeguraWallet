@@ -7,14 +7,15 @@ import { useTheme } from '@mui/material/styles';
 import 'react-multi-carousel/lib/styles.css';
 
 // project imports
+import { AddCard, ShoppingBag } from '@mui/icons-material';
 import Page from 'components/ui-component/Page';
-import RevenueCard from 'components/ui-component/cards/RevenueCard';
-import Layout from 'layout';
-import { gridSpacing } from 'store/constant';
 import AttachmentCard from 'components/ui-component/cards/AttachmentCard';
 import BillCard from 'components/ui-component/cards/BillCard';
 import IconNumberCard from 'components/ui-component/cards/IconNumberCard';
-import { AddCard, Check, ShoppingBag } from '@mui/icons-material';
+import MainCard from 'components/ui-component/cards/MainCard';
+import RevenueCard from 'components/ui-component/cards/RevenueCard';
+import Layout from 'layout';
+import { gridSpacing } from 'store/constant';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
@@ -37,7 +38,7 @@ const SamplePage = () => {
             // a green color
             color={theme.palette.info.light}
             iconPrimary={null}
-            img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+            img="https://cdn-icons-png.flaticon.com/512/6963/6963703.png"
           />
         </Grid>
         <Grid item xs={4}>
@@ -47,24 +48,93 @@ const SamplePage = () => {
             content="Gastos en el mes >"
             color="#9c27b0"
             iconPrimary={null}
-            // dollar icon
-            img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+            img="https://cdn-icons-png.flaticon.com/512/8539/8539117.png"
           />
         </Grid>
         <Grid item xs={4}>
           <Grid container gap={1}>
             <Grid item xs={12}>
-              <IconNumberCard title="Ingresos en el año >" primary="Bs. 3001.01" color={theme.palette.info.light} iconPrimary={AddCard} />
+              <IconNumberCard title="Ingresos en el año >" primary="Bs. 7522.10" color={theme.palette.info.light} iconPrimary={AddCard} />
             </Grid>
             <Grid item xs={12}>
-              <IconNumberCard title="Gastos en el año >" primary="Bs. 7522.10" color="#9c27b0" iconPrimary={ShoppingBag} />
+              <IconNumberCard title="Gastos en el año >" primary="Bs. 3001.01" color="#9c27b0" iconPrimary={ShoppingBag} />
             </Grid>
           </Grid>
         </Grid>
       </Grid>
 
       {/* Bottom section */}
-      <Grid container spacing={gridSpacing}></Grid>
+      <Grid container spacing={gridSpacing} sx={{ mt: '2px' }}>
+        {/* Left side */}
+        <Grid item xs={8}>
+          <MainCard title="Estadísticas financieras" content="Ver todos >">
+            <Grid container spacing={gridSpacing}>
+              <Grid item xs={12}>
+                <AttachmentCard
+                  title="Compra de materiales"
+                  content="Bs. 1500.00"
+                  color="#9c27b0"
+                  iconPrimary={null}
+                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <AttachmentCard
+                  title="Compra de materiales"
+                  content="Bs. 1500.00"
+                  color="#9c27b0"
+                  iconPrimary={null}
+                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <AttachmentCard
+                  title="Compra de materiales"
+                  content="Bs. 1500.00"
+                  color="#9c27b0"
+                  iconPrimary={null}
+                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+                />
+              </Grid>
+            </Grid>
+          </MainCard>
+        </Grid>
+
+        {/* Right side */}
+        <Grid item xs={4}>
+          <MainCard title="Facturas" content="Ver todas >">
+            <Grid container spacing={gridSpacing}>
+              <Grid item xs={12}>
+                <BillCard
+                  title="Compra de materiales"
+                  content="Bs. 1500.00"
+                  color="#9c27b0"
+                  iconPrimary={null}
+                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <BillCard
+                  title="Compra de materiales"
+                  content="Bs. 1500.00"
+                  color="#9c27b0"
+                  iconPrimary={null}
+                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <BillCard
+                  title="Compra de materiales"
+                  content="Bs. 1500.00"
+                  color="#9c27b0"
+                  iconPrimary={null}
+                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+                />
+              </Grid>
+            </Grid>
+          </MainCard>
+        </Grid>
+      </Grid>
     </Page>
   );
 };
