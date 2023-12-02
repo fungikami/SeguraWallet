@@ -13,12 +13,12 @@ const IconNumberCard = ({ title, primary, color, iconPrimary }) => {
   const primaryIcon = iconPrimary ? <IconPrimary /> : null;
 
   return (
-    <MainCard>
+    <MainCard sx={{ backgroundColor: color, color: '#fff' }}>
       <Grid container spacing={2} alignItems="center">
         <Grid item xs={12}>
           <Grid container justifyContent="space-between" alignItems="center">
             <Grid item>
-              <Typography variant="subtitle2" sx={{ color }}>
+              <Typography variant="subtitle2" sx={{ color: '#fff' }}>
                 {primaryIcon}
               </Typography>
               <Typography variant="h5" color="inherit">
@@ -26,7 +26,7 @@ const IconNumberCard = ({ title, primary, color, iconPrimary }) => {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="h3">{primary}</Typography>
+              <Typography variant="h3" color="inherit">{primary}</Typography>
             </Grid>
           </Grid>
         </Grid>

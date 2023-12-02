@@ -11,6 +11,10 @@ import Page from 'components/ui-component/Page';
 import RevenueCard from 'components/ui-component/cards/RevenueCard';
 import Layout from 'layout';
 import { gridSpacing } from 'store/constant';
+import AttachmentCard from 'components/ui-component/cards/AttachmentCard';
+import BillCard from 'components/ui-component/cards/BillCard';
+import IconNumberCard from 'components/ui-component/cards/IconNumberCard';
+import { AddCard, Check, ShoppingBag } from '@mui/icons-material';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
@@ -25,65 +29,42 @@ const SamplePage = () => {
     <Page title="Inicio">
       <Grid container spacing={gridSpacing}>
         {/* Left side */}
-        <Grid item xs={8}>
-          {/* Top section */}
-          <Grid container spacing={gridSpacing}>
-            <Grid item xs={12} md={6}>
-              <RevenueCard
-                primary="Total de ingresos"
-                secondary="Bs. 6780.27"
-                content="Total de ingresos en el mes"
-                // a green color
-                color={theme.palette.success.main}
-                iconPrimary={null}
-                img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-              />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <RevenueCard
-                primary="Total de gastos"
-                secondary="Bs. 4501.12"
-                content="Total de gastos en el mes"
-                color={theme.palette.error.main}
-                iconPrimary={null}
-                // dollar icon
-                img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-              />
-            </Grid>
-          </Grid>
-
-          {/* Bottom section */}
-          <Grid container spacing={gridSpacing}></Grid>
-        </Grid>
-
-        {/* Right side */}
         <Grid item xs={4}>
-          <Grid container spacing={gridSpacing}>
-            <Grid item xs={12} md={12}>
-              <RevenueCard
-                primary="Total de ingresos"
-                secondary="Bs. 6780.27"
-                content="Total de ingresos en el mes"
-                // a green color
-                color={theme.palette.success.main}
-                iconPrimary={null}
-                img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-              />
+          <RevenueCard
+            primary="Total de ingresos"
+            secondary="Bs. 3780.27"
+            content="Ingresos en el mes >"
+            // a green color
+            color={theme.palette.info.light}
+            iconPrimary={null}
+            img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <RevenueCard
+            primary="Total de gastos"
+            secondary="Bs. 1501.12"
+            content="Gastos en el mes >"
+            color="#9c27b0"
+            iconPrimary={null}
+            // dollar icon
+            img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <Grid container gap={1}>
+            <Grid item xs={12}>
+              <IconNumberCard title="Ingresos en el año >" primary="Bs. 3001.01" color={theme.palette.info.light} iconPrimary={AddCard} />
             </Grid>
-            <Grid item xs={12} md={12}>
-              <RevenueCard
-                primary="Total de gastos"
-                secondary="Bs. 4501.12"
-                content="Total de gastos en el mes"
-                color={theme.palette.error.main}
-                iconPrimary={null}
-                // dollar icon
-                img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-              />
+            <Grid item xs={12}>
+              <IconNumberCard title="Gastos en el año >" primary="Bs. 7522.10" color="#9c27b0" iconPrimary={ShoppingBag} />
             </Grid>
           </Grid>
         </Grid>
       </Grid>
+
+      {/* Bottom section */}
+      <Grid container spacing={gridSpacing}></Grid>
     </Page>
   );
 };
