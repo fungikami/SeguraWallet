@@ -89,7 +89,7 @@ const NotificationList = () => {
           <ListItemAvatar>
             <Avatar alt="Kami" src={null} />
           </ListItemAvatar>
-          <ListItemText primary="John Doe" />
+          <ListItemText primary="Kami" />
           <ListItemSecondaryAction>
             <Grid container justifyContent="flex-end">
               <Grid item xs={12}>
