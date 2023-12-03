@@ -261,7 +261,7 @@ const SamplePage = () => {
                         Nombre del titular
                       </Typography>
                       <Typography variant="h4" sx={{ color: 'text.primary' }}>
-                        Jone Doe
+                        Jean Carlos
                       </Typography>
                       <Typography variant="subtitle1" sx={{ color: 'text.secondary', mt: 2 }}>
                         Tipo de cuenta

@@ -87,14 +87,14 @@ const NotificationList = () => {
       <ListItemWrapper>
         <ListItem alignItems="center">
           <ListItemAvatar>
-            <Avatar alt="John Doe" src={User1} />
+            <Avatar alt="Kami" src={null} />
           </ListItemAvatar>
           <ListItemText primary="John Doe" />
           <ListItemSecondaryAction>
             <Grid container justifyContent="flex-end">
               <Grid item xs={12}>
                 <Typography variant="caption" display="block" gutterBottom>
-                  2 min ago
+                  2 min antes
                 </Typography>
               </Grid>
             </Grid>
@@ -102,15 +102,15 @@ const NotificationList = () => {
         </ListItem>
         <Grid container direction="column" className="list-container">
           <Grid item xs={12} sx={{ pb: 2 }}>
-            <Typography variant="subtitle2">It is a long established fact that a reader will be distracted</Typography>
+            <Typography variant="subtitle2">Te he enviado Bs. 5</Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid container>
               <Grid item>
-                <Chip label="Unread" sx={chipErrorSX} />
+                <Chip label="No leído" sx={chipErrorSX} />
               </Grid>
               <Grid item>
-                <Chip label="New" sx={chipWarningSX} />
+                <Chip label="Nuevo" sx={chipWarningSX} />
               </Grid>
             </Grid>
           </Grid>
@@ -131,12 +131,12 @@ const NotificationList = () => {
               <IconBuildingStore stroke={1.5} size="20px" />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={<Typography variant="subtitle1">Store Verification Done</Typography>} />
+          <ListItemText primary={<Typography variant="subtitle1">Cambios de configuración</Typography>} />
           <ListItemSecondaryAction>
             <Grid container justifyContent="flex-end">
               <Grid item xs={12}>
                 <Typography variant="caption" display="block" gutterBottom>
-                  2 min ago
+                  2 min antes
                 </Typography>
               </Grid>
             </Grid>
@@ -144,12 +144,12 @@ const NotificationList = () => {
         </ListItem>
         <Grid container direction="column" className="list-container">
           <Grid item xs={12} sx={{ pb: 2 }}>
-            <Typography variant="subtitle2">We have successfully received your request.</Typography>
+            <Typography variant="subtitle2">Has cambiado la contraseña recientemente</Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid container>
               <Grid item>
-                <Chip label="Unread" sx={chipErrorSX} />
+                <Chip label="No leído" sx={chipErrorSX} />
               </Grid>
             </Grid>
           </Grid>
@@ -170,12 +170,12 @@ const NotificationList = () => {
               <IconMailbox stroke={1.5} size="20px" />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={<Typography variant="subtitle1">Check Your Mail.</Typography>} />
+          <ListItemText primary={<Typography variant="subtitle1">Revisa tu correo.</Typography>} />
           <ListItemSecondaryAction>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Typography variant="caption" display="block" gutterBottom>
-                  2 min ago
+                  2 min antes
                 </Typography>
               </Grid>
             </Grid>
@@ -183,13 +183,13 @@ const NotificationList = () => {
         </ListItem>
         <Grid container direction="column" className="list-container">
           <Grid item xs={12} sx={{ pb: 2 }}>
-            <Typography variant="subtitle2">All done! Now check your inbox as you&apos;re in for a sweet treat!</Typography>
+            <Typography variant="subtitle2">¡Todo listo! Revisa tu correo para más información</Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid container>
               <Grid item>
                 <Button variant="contained" disableElevation endIcon={<IconBrandTelegram stroke={1.5} size="20px" />}>
-                  Mail
+                  Correo electrónico
                 </Button>
               </Grid>
             </Grid>
@@ -200,14 +200,14 @@ const NotificationList = () => {
       <ListItemWrapper>
         <ListItem alignItems="center">
           <ListItemAvatar>
-            <Avatar alt="John Doe" src={User1} />
+            <Avatar alt="chus" src={null} />
           </ListItemAvatar>
-          <ListItemText primary={<Typography variant="subtitle1">John Doe</Typography>} />
+          <ListItemText primary={<Typography variant="subtitle1">chus</Typography>} />
           <ListItemSecondaryAction>
             <Grid container justifyContent="flex-end">
               <Grid item xs={12}>
                 <Typography variant="caption" display="block" gutterBottom>
-                  2 min ago
+                  2 min antes
                 </Typography>
               </Grid>
             </Grid>
@@ -216,9 +216,9 @@ const NotificationList = () => {
         <Grid container direction="column" className="list-container">
           <Grid item xs={12} sx={{ pb: 2 }}>
             <Typography component="span" variant="subtitle2">
-              Uploaded two file on &nbsp;
+              Transferencia recibida &nbsp;
               <Typography component="span" variant="h6">
-                21 Jan 2020
+                21 Nov 2023
               </Typography>
             </Typography>
           </Grid>
@@ -235,42 +235,12 @@ const NotificationList = () => {
                       <Grid item xs={12}>
                         <Stack direction="row" spacing={2}>
                           <IconPhoto stroke={1.5} size="20px" />
-                          <Typography variant="subtitle1">demo.jpg</Typography>
+                          <Typography variant="subtitle1">transferencia.jpg</Typography>
                         </Stack>
                       </Grid>
                     </Grid>
                   </CardContent>
                 </Card>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </ListItemWrapper>
-      <Divider />
-      <ListItemWrapper>
-        <ListItem alignItems="center">
-          <ListItemAvatar>
-            <Avatar alt="John Doe" src={User1} />
-          </ListItemAvatar>
-          <ListItemText primary={<Typography variant="subtitle1">John Doe</Typography>} />
-          <ListItemSecondaryAction>
-            <Grid container justifyContent="flex-end">
-              <Grid item xs={12}>
-                <Typography variant="caption" display="block" gutterBottom>
-                  2 min ago
-                </Typography>
-              </Grid>
-            </Grid>
-          </ListItemSecondaryAction>
-        </ListItem>
-        <Grid container direction="column" className="list-container">
-          <Grid item xs={12} sx={{ pb: 2 }}>
-            <Typography variant="subtitle2">It is a long established fact that a reader will be distracted</Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Grid container>
-              <Grid item>
-                <Chip label="Confirmation of Account." sx={chipSuccessSX} />
               </Grid>
             </Grid>
           </Grid>

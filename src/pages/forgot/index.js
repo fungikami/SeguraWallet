@@ -20,7 +20,7 @@ const ForgotPassword = () => {
   const matchDownSM = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Page title="Forgot Password">
+    <Page title="Contraseña olvidada">
       <AuthWrapper1>
         <Grid container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
           <Grid item xs={12}>
@@ -37,12 +37,12 @@ const ForgotPassword = () => {
                       <Grid container alignItems="center" justifyContent="center" textAlign="center" spacing={2}>
                         <Grid item xs={12}>
                           <Typography color={theme.palette.secondary.main} gutterBottom variant={matchDownSM ? 'h3' : 'h2'}>
-                            Forgot password?
+                            ¿Olvidaste tu contraseña?
                           </Typography>
                         </Grid>
                         <Grid item xs={12}>
                           <Typography variant="caption" fontSize="16px" textAlign="center">
-                            Enter your email address below and we&apos;ll send you password reset OTP.
+                            Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.
                           </Typography>
                         </Grid>
                       </Grid>
@@ -56,7 +56,7 @@ const ForgotPassword = () => {
                     <Grid item xs={12}>
                       <Grid item container direction="column" alignItems="center" xs={12}>
                         <Typography component={Link} href="/login" variant="subtitle1" sx={{ textDecoration: 'none' }}>
-                          Already have an account?
+                          ¿Ya tienes una cuenta? Inicia sesión
                         </Typography>
                       </Grid>
                     </Grid>

@@ -35,19 +35,19 @@ import { IconBell } from '@tabler/icons';
 const status = [
   {
     value: 'all',
-    label: 'All Notification'
+    label: 'Todas las notificaciones'
   },
   {
     value: 'new',
-    label: 'New'
+    label: 'Nueva'
   },
   {
     value: 'unread',
-    label: 'Unread'
+    label: 'No leído'
   },
   {
     value: 'other',
-    label: 'Other'
+    label: 'Otros'
   }
 ];
 
@@ -148,7 +148,7 @@ const NotificationSection = () => {
                         <Grid container alignItems="center" justifyContent="space-between" sx={{ pt: 2, px: 2 }}>
                           <Grid item>
                             <Stack direction="row" spacing={2}>
-                              <Typography variant="subtitle1">All Notification</Typography>
+                              <Typography variant="subtitle1">Notificaciones</Typography>
                               <Chip
                                 size="small"
                                 label="01"
@@ -161,7 +161,7 @@ const NotificationSection = () => {
                           </Grid>
                           <Grid item>
                             <Typography component={Link} href="#" variant="subtitle2" color="primary">
-                              Mark as all read
+                              Marcar todas como leídas
                             </Typography>
                           </Grid>
                         </Grid>
@@ -200,7 +200,7 @@ const NotificationSection = () => {
                     <Divider />
                     <CardActions sx={{ p: 1.25, justifyContent: 'center' }}>
                       <Button size="small" disableElevation>
-                        View All
+                        Ver todas
                       </Button>
                     </CardActions>
                   </MainCard>

@@ -174,7 +174,7 @@ const JWTRegister = ({ ...others }) => {
             </FormControl>
 
             <FormControl fullWidth error={Boolean(touched.password && errors.password)} sx={{ ...theme.typography.customInput }}>
-              <InputLabel htmlFor="outlined-adornment-password-register">Password</InputLabel>
+              <InputLabel htmlFor="outlined-adornment-password-register">Contraseña</InputLabel>
               <OutlinedInput
                 id="outlined-adornment-password-register"
                 type={showPassword ? 'text' : 'password'}

@@ -23,6 +23,7 @@ import {
   Switch,
   Typography
 } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
 
 // third-party
 import { FormattedMessage } from 'react-intl';
@@ -116,7 +117,7 @@ const ProfileSection = () => {
         }}
         icon={
           <Avatar
-            src={User1}
+            src={null}
             sx={{
               ...theme.typography.mediumAvatar,
               margin: '8px 0 8px 8px !important',
@@ -127,7 +128,9 @@ const ProfileSection = () => {
             aria-haspopup="true"
             color="inherit"
             alt="user images"
-          />
+          >
+            <PersonIcon fontSize="small" />{' '}
+          </Avatar>
         }
         label={<IconSettings stroke={1.5} size="24px" color={theme.palette.primary.main} />}
         variant="outlined"
@@ -164,7 +167,7 @@ const ProfileSection = () => {
                         <Stack direction="row" spacing={0.5} alignItems="center">
                           <Typography variant="h4">Buenos Días,</Typography>
                           <Typography component="span" variant="h4" sx={{ fontWeight: 400 }}>
-                            {user ? user.name : 'Jone Doe'}
+                            {user ? user.name : 'Jean Carlos'}
                           </Typography>
                         </Stack>
                       </Stack>
