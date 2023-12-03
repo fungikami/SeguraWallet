@@ -4,9 +4,12 @@ import InsightsIcon from '@mui/icons-material/Insights';
 import CardMembershipIcon from '@mui/icons-material/CardMembership';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SsidChartIcon from '@mui/icons-material/SsidChart';
+import HomeIcon from '@mui/icons-material/Home';
+import { IconSailboatOff } from '@tabler/icons';
 
 // constant
 const icons = {
+  HomeIcon,
   InsightsIcon,
   SsidChartIcon,
   CardMembershipIcon,
@@ -27,7 +30,7 @@ const pages = {
       title: 'Inicio',
       type: 'item',
       url: '/home',
-      icon: icons.InsightsIcon,
+      icon: icons.HomeIcon,
       breadcrumbs: true
     },
     {
@@ -35,7 +38,7 @@ const pages = {
       title: 'Análisis',
       type: 'item',
       url: '/analysis',
-      icon: icons.SsidChartIcon,
+      icon: icons.InsightsIcon,
       breadcrumbs: true
     },
     {
