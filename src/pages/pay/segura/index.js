@@ -18,6 +18,8 @@ import Layout from 'layout';
 import Page from 'components/ui-component/Page';
 import MainCard from 'components/ui-component/cards/MainCard';
 import { gridSpacing } from 'store/constant';
+import { ScubaDiving } from '@mui/icons-material';
+import SuccessCard from 'components/ui-component/cards/SuccessCard';
 
 const steps = ['Formulario', 'Verificación', 'Resultado'];
 
@@ -93,13 +95,7 @@ const SamplePage = () => {
             })}
           </Stepper>
           {activeStep === steps.length ? (
-            <>
-              <Typography sx={{ mt: 2, mb: 1 }}>All steps completed - you&apos;re finished</Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-                <Box sx={{ flex: '1 1 auto' }} />
-                <Button onClick={handleReset}>Reset</Button>
-              </Box>
-            </>
+            <SuccessCard />
           ) : (
             <>
               <Grid container spacing={gridSpacing} my={4}>
