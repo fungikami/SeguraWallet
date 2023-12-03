@@ -9,13 +9,13 @@ import 'react-multi-carousel/lib/styles.css';
 // project imports
 import { AddCard, ShoppingBag } from '@mui/icons-material';
 import Page from 'components/ui-component/Page';
-import AttachmentCard from 'components/ui-component/cards/AttachmentCard';
-import BillCard from 'components/ui-component/cards/BillCard';
 import IconNumberCard from 'components/ui-component/cards/IconNumberCard';
 import MainCard from 'components/ui-component/cards/MainCard';
 import RevenueCard from 'components/ui-component/cards/RevenueCard';
 import Layout from 'layout';
 import { gridSpacing } from 'store/constant';
+import PopularCard from './PopularCard';
+import TotalGrowthBarChart from './TotalGrowthBarChart';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
@@ -70,31 +70,7 @@ const SamplePage = () => {
           <MainCard title="Estadísticas financieras" content="Ver todos >">
             <Grid container spacing={gridSpacing}>
               <Grid item xs={12}>
-                <AttachmentCard
-                  title="Compra de materiales"
-                  content="Bs. 1500.00"
-                  color="#9c27b0"
-                  iconPrimary={null}
-                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <AttachmentCard
-                  title="Compra de materiales"
-                  content="Bs. 1500.00"
-                  color="#9c27b0"
-                  iconPrimary={null}
-                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <AttachmentCard
-                  title="Compra de materiales"
-                  content="Bs. 1500.00"
-                  color="#9c27b0"
-                  iconPrimary={null}
-                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-                />
+                <TotalGrowthBarChart isLoading={false} />
               </Grid>
             </Grid>
           </MainCard>
@@ -102,35 +78,9 @@ const SamplePage = () => {
 
         {/* Right side */}
         <Grid item xs={4}>
-          <MainCard title="Facturas" content="Ver todas >">
+          <MainCard title="Pronóstico" content="Ver recomendaciones >">
             <Grid container spacing={gridSpacing}>
-              <Grid item xs={12}>
-                <BillCard
-                  title="Compra de materiales"
-                  content="Bs. 1500.00"
-                  color="#9c27b0"
-                  iconPrimary={null}
-                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <BillCard
-                  title="Compra de materiales"
-                  content="Bs. 1500.00"
-                  color="#9c27b0"
-                  iconPrimary={null}
-                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <BillCard
-                  title="Compra de materiales"
-                  content="Bs. 1500.00"
-                  color="#9c27b0"
-                  iconPrimary={null}
-                  img="https://cdn-icons-png.flaticon.com/512/2745/2745122.png"
-                />
-              </Grid>
+              <PopularCard isLoading={false} />
             </Grid>
           </MainCard>
         </Grid>
