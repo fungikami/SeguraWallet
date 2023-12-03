@@ -39,7 +39,7 @@ const Notifications = () => {
               <Grid container spacing={gridSpacing}>
                 <Grid item xs={12}>
                   <Typography variant="subtitle1" align="left">
-                    Me gusta recibir notificaciones de:
+                    Me gustaría recibir notificaciones de:
                   </Typography>
                 </Grid>
                 <Grid item xs={12}>

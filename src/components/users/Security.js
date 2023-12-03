@@ -16,7 +16,7 @@ const Security = () => {
       <Grid item sm={6} md={8}>
         <Grid container spacing={gridSpacing}>
           <Grid item xs={12}>
-            <SubCard title="Cambiar Contraseña">
+            <SubCard title="Cambiar contraseña">
               <Grid container spacing={gridSpacing}>
                 <Grid item xs={12}>
                   <TextField id="outlined-basic9" type="password" fullWidth label="Contraseña actual" />
