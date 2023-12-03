@@ -2,13 +2,15 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { IconBrandChrome, IconHelp, IconSitemap } from '@tabler/icons';
+import { IconBrandChrome, IconHelp, IconSitemap, IconLogout, IconSettings } from '@tabler/icons';
 
 // constant
 const icons = {
   IconBrandChrome,
   IconHelp,
-  IconSitemap
+  IconSitemap,
+  IconLogout,
+  IconSettings
 };
 
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
@@ -19,31 +21,21 @@ const other = {
   type: 'group',
   children: [
     {
-      id: 'sample-page',
-      title: <FormattedMessage id="sample-page" />,
+      id: 'profile',
+      title: 'Configuración',
       type: 'item',
-      url: '/sample-page',
-      icon: icons.IconBrandChrome,
+      url: '/profile',
+      icon: icons.IconSettings,
+      breadcrumbs: true
+    },
+    {
+      id: 'logout',
+      title: 'Cerrar Sesión',
+      type: 'item',
+      url: '/login',
+      icon: icons.IconLogout,
       breadcrumbs: false
     },
-    {
-      id: 'documentation',
-      title: <FormattedMessage id="documentation" />,
-      type: 'item',
-      url: 'https://codedthemes.gitbook.io/berry/',
-      icon: icons.IconHelp,
-      external: true,
-      target: true
-    },
-    {
-      id: 'roadmap',
-      title: <FormattedMessage id="roadmap" />,
-      type: 'item',
-      url: 'https://codedthemes.gitbook.io/berry/roadmap',
-      icon: icons.IconSitemap,
-      external: true,
-      target: true
-    }
   ]
 };
 

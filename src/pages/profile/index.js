@@ -74,7 +74,7 @@ const Profile3 = () => {
             variant="scrollable"
           >
             <Tab component={Link} href="#" label="Perfil" {...a11yProps(0)} />
-            <Tab component={Link} href="#" label="Historial" {...a11yProps(1)} />
+            <Tab component={Link} href="#" label="Cuentas bancarias" {...a11yProps(1)} />
             <Tab component={Link} href="#" label="Seguridad" {...a11yProps(2)} />
             <Tab component={Link} href="#" label="Notificaciones" {...a11yProps(3)} />
           </Tabs>

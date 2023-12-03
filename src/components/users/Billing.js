@@ -64,7 +64,7 @@ const Billing = () => {
               <Grid container spacing={1} alignItems="center" justifyContent="space-between">
                 <Grid item>
                   <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={1}>
-                    <CardMedia component="img" image={banesco} title="payment" sx={{ width: 65 }} />
+                    <CardMedia component="img" image={banesco} title="payment" sx={{ width: 65, pr:1 }} />
                     <Stack>
                       <Typography variant="subtitle1">Banesco</Typography>
                       <Typography variant="subtitle2">5269 07XX XXXX 8110</Typography>
@@ -91,7 +91,7 @@ const Billing = () => {
               <Grid container spacing={1} alignItems="center" justifyContent="space-between">
                 <Grid item>
                   <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={1}>
-                    <CardMedia component="img" image={bancamiga} title="payment" sx={{ width: 65 }} />
+                    <CardMedia component="img" image={bancamiga} title="payment" sx={{ width: 65, pr:1 }} />
                     <Stack>
                       <Typography component="div" variant="subtitle1">
                         Bancamiga
@@ -122,7 +122,7 @@ const Billing = () => {
               <Grid container spacing={1} alignItems="center" justifyContent="space-between">
                 <Grid item>
                   <Stack direction="row" justifyContent="flex-start" alignItems="center" spacing={1}>
-                    <CardMedia component="img" image={mercantil} title="payment" sx={{ width: 65 }} />
+                    <CardMedia component="img" image={mercantil} title="payment" sx={{ width: 65, pr:1 }} />
                     <Stack>
                       <Typography component="div" variant="subtitle1">
                         Mercantil
