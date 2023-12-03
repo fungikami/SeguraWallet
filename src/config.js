@@ -4,7 +4,7 @@ import { LAYOUT_CONST } from 'constant';
 // like '/berry-material-react/react/default'
 export const BASE_PATH = '';
 
-export const DASHBOARD_PATH = '/sample-page';
+export const DASHBOARD_PATH = '/home';
 export const HORIZONTAL_MAX_ITEM = 6;
 
 const config = {

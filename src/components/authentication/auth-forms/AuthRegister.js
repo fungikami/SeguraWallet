@@ -76,7 +76,7 @@ const JWTRegister = ({ ...others }) => {
       <Grid container direction="column" justifyContent="center" spacing={2}>
         <Grid item xs={12} container alignItems="center" justifyContent="center">
           <Box sx={{ mb: 2 }}>
-            <Typography variant="subtitle1">Sign up with Email address</Typography>
+            <Typography variant="subtitle1">Regístrate con correo electrónico</Typography>
           </Box>
         </Grid>
       </Grid>
@@ -131,7 +131,7 @@ const JWTRegister = ({ ...others }) => {
               <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
-                  label="First Name"
+                  label="Nombre"
                   margin="normal"
                   name="firstName"
                   type="text"
@@ -144,7 +144,7 @@ const JWTRegister = ({ ...others }) => {
               <Grid item xs={12} sm={6}>
                 <TextField
                   fullWidth
-                  label="Last Name"
+                  label="Apellido"
                   margin="normal"
                   name="lastName"
                   type="text"
@@ -156,7 +156,7 @@ const JWTRegister = ({ ...others }) => {
               </Grid>
             </Grid>
             <FormControl fullWidth error={Boolean(touched.email && errors.email)} sx={{ ...theme.typography.customInput }}>
-              <InputLabel htmlFor="outlined-adornment-email-register">Email Address / Username</InputLabel>
+              <InputLabel htmlFor="outlined-adornment-email-register">Correo electrónico</InputLabel>
               <OutlinedInput
                 id="outlined-adornment-email-register"
                 type="email"
@@ -180,7 +180,7 @@ const JWTRegister = ({ ...others }) => {
                 type={showPassword ? 'text' : 'password'}
                 value={values.password}
                 name="password"
-                label="Password"
+                label="Contraseña"
                 onBlur={handleBlur}
                 onChange={(e) => {
                   handleChange(e);
@@ -233,9 +233,9 @@ const JWTRegister = ({ ...others }) => {
                   }
                   label={
                     <Typography variant="subtitle1">
-                      Agree with &nbsp;
+                      Estoy de acuerdo con los &nbsp;
                       <Typography variant="subtitle1" component={Link} href="/">
-                        Terms & Condition.
+                        Terminos y Condiciones
                       </Typography>
                     </Typography>
                   }
@@ -251,7 +251,7 @@ const JWTRegister = ({ ...others }) => {
             <Box sx={{ mt: 2 }}>
               <AnimateButton>
                 <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="secondary">
-                  Sign up
+                  Registrarse
                 </Button>
               </AnimateButton>
             </Box>

@@ -17,8 +17,16 @@ const Logo = () => {
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-      <img src="/assets/images/logo.png" alt="Berry" height="30" />
-      <Typography variant="h1" color="" sx={{ ml: 1.5, display: { xs: 'none', md: 'block' }, textDecoration: 'none'}}>
+      <img src="/assets/images/logo.png" alt="Berry" height="40" />
+      <Typography
+        variant="h1"
+        sx={{
+          ml: 1,
+          display: { xs: 'none', md: 'block' },
+          color: theme.palette.primary.main,
+          fontSize: '2rem',
+        }}
+      >
         Segura
       </Typography>
     </Box>
