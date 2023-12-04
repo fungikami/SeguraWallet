@@ -60,10 +60,10 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
         <tr>
             <td>Perfil</td>
             <td rowspan="2">
-            Perfil: <img src="imgs/profile1.jpeg" alt="Perfil">
-            Cuentas bancarias: <img src="imgs/profile2.jpeg" alt="Perfil">
-            Seguridad: <img src="imgs/profile3.jpeg" alt="Perfil">
-            Notificaciones: <img src="imgs/profile4.jpeg" alt="Perfil">
+            Perfil:</br> <img src="imgs/profile1.jpeg" alt="Perfil"></br>
+            Cuentas bancarias:</br> <img src="imgs/profile2.jpeg" alt="Perfil"></br>
+            Seguridad:</br> <img src="imgs/profile3.jpeg" alt="Perfil"></br>
+            Notificaciones: </br><img src="imgs/profile4.jpeg" alt="Perfil"></br>
             </td>
         </tr>
         <tr>
@@ -88,10 +88,10 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
         <tr>
             <td>Pagar a una otra cuenta de Segura Wallet</td>
             <td rowspan="2">
-            Proceso:
-            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet">
-            Éxito:
-            <img src="imgs/pay-segura-success.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></td>
+            Proceso:</br>
+            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></br>
+            Éxito:</br>
+            <img src="imgs/pay-segura-success.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></br></td>
         </tr>
         <tr>
             <td><a href="#">/pay/segura</a></td>
@@ -107,15 +107,15 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
         <tr>
             <td>Generalidades de la interfaz</td>
             <td rowspan="2">
-            Barra de búsqueda:
-            <img src="imgs/searchbar.jpeg" alt="Barra de búsqueda">
-            Acerca de:
-            <img src="imgs/about.png" alt="Acerca de">
+            Barra de búsqueda:</br>
+            <img src="imgs/searchbar.jpeg" alt="Barra de búsqueda"></br>
+            Acerca de:</br>
+            <img src="imgs/about.png" alt="Acerca de"></br>
             Idioma: </br>
             <img src="imgs/language.jpeg" alt="Idioma"> </br>
-            Notificaciones:
-            <img src="imgs/notifications.jpeg" alt="Notificaciones">
-            Configuración de la cuenta:
+            Notificaciones:</br>
+            <img src="imgs/notifications.jpeg" alt="Notificaciones"></br>
+            Configuración de la cuenta:</br>
             <img src="imgs/account-config.jpeg" alt="Configuración de la cuenta">
             </td>
         </tr>
