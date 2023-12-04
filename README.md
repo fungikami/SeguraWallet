@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Segura Wallet
 
-## Getting Started
+Segura Wallet es un producto de e-Banking que busca ayudar a las personas a tener un mejor control de sus finanzas personales, a la vez que provee a sus usuarios con facilidades nunca antes vistas para manejar todos sus productos financieros en un solo lugar.
 
-First, run the development server:
+Con lo común que es hoy en día tener más de una cuenta bancaria en distintas instituciones financieras, resulta muy fácil:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
++ Perder el control de los gastos y de los ingresos.
++ Contar con distintas aplicaciones para manejar cada cuenta, cada una con su propia interfaz, reglas, usabilidad, etc.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Por ello, las caracterías principales de Segura Wallet son:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
++ **Un solo lugar para manejar todas tus cuentas:** Segura Wallet te permite sincronizae todas tus cuentas bancarias en la aplicación, con lo que podrás no solo ver el estado de todas tus cuentas en un solo vistazo, sino que también podrás realizar transferencias entre tus cuentas, a cuentas de otros usuarios de Segura, o a otras cuentas bancarias, sin importar si son de distintas instituciones financieras.
++ **Control de gastos:** Segura Wallet te permite categorizar tus gastos, para que puedas ver en qué estás gastando tu dinero, y así puedas tomar mejores decisiones financieras.
++ **Análisis de balances:** Con la revolución de la Inteligencia Artifical, Segura Wallet te ofrece análisis detallados de tus balances, con gráficas y estadísticas que te ayudarán a entender de manera fácil y rápida cómo estás manejando tus finanzas personales, como también obtendrás recomendaciones personalizadas y pronósticos de tus finanzas, con lo que planear tu futuro financiero será más fácil que nunca.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Descripción del proyecto
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para el prototipado de este proyecto, se desarrolló una aplicación web utilizando el framework de React.js, con el framework de Next.js para el manejo de rutas y el renderizado del lado del servidor, y Material UI para el diseño de la interfaz de usuario.
 
-## Learn More
+Para correr el proyecto, se debe clonar el repositorio, instalar las dependencias con `npm install`, y ejecutar un servidor local con el comando `npm run dev`. Luego, puedes abrir [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
-To learn more about Next.js, take a look at the following resources:
+## Vistas de Segura Wallet
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<table>
+    <thead>
+        <tr>
+            <th>Característica</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Inicio de sesión</td>
+            <td rowspan="2"><img src="imgs/login.jpeg" alt="Login"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/login</a></td>
+        </tr>
+        <tr>
+            <td>Registro</td>
+            <td rowspan="2"><img src="imgs/register.jpeg" alt="Registro"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/register</a></td>
+        </tr>
+        <tr>
+            <td>Recuperar contraseña</td>
+            <td rowspan="2"><img src="imgs/forgot.jpeg" alt="Recuperar contraseña"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/forgot</a></td>
+        </tr>
+        <tr>
+            <td>Inicio</td>
+            <td rowspan="2"><img src="imgs/home.jpeg" alt="Inicio"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/home</a></td>
+        </tr>
+        <tr>
+            <td>Perfil</td>
+            <td rowspan="2"><img src="imgs/profile1.jpeg" alt="Perfil"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/profile</a></td>
+        </tr>
+    </tbody>
+</table>
