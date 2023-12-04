@@ -110,9 +110,9 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
             Barra de búsqueda:
             <img src="imgs/searchbar.jpeg" alt="Barra de búsqueda">
             Acerca de:
-            <img src="imgs/about.jpeg" alt="Acerca de">
-            Idioma:
-            <img src="imgs/language.jpeg" alt="Idioma">
+            <img src="imgs/about.png" alt="Acerca de">
+            Idioma: </br>
+            <img src="imgs/language.jpeg" alt="Idioma"> </br>
             Notificaciones:
             <img src="imgs/notifications.jpeg" alt="Notificaciones">
             Configuración de la cuenta:
