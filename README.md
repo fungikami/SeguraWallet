@@ -4,14 +4,14 @@ Segura Wallet es un producto de e-Banking que busca ayudar a las personas a tene
 
 Con lo común que es hoy en día tener más de una cuenta bancaria en distintas instituciones financieras, resulta muy fácil:
 
-+ Perder el control de los gastos y de los ingresos.
-+ Contar con distintas aplicaciones para manejar cada cuenta, cada una con su propia interfaz, reglas, usabilidad, etc.
+- Perder el control de los gastos y de los ingresos.
+- Contar con distintas aplicaciones para manejar cada cuenta, cada una con su propia interfaz, reglas, usabilidad, etc.
 
 Por ello, las caracterías principales de Segura Wallet son:
 
-+ **Un solo lugar para manejar todas tus cuentas:** Segura Wallet te permite sincronizae todas tus cuentas bancarias en la aplicación, con lo que podrás no solo ver el estado de todas tus cuentas en un solo vistazo, sino que también podrás realizar transferencias entre tus cuentas, a cuentas de otros usuarios de Segura, o a otras cuentas bancarias, sin importar si son de distintas instituciones financieras.
-+ **Control de gastos:** Segura Wallet te permite categorizar tus gastos, para que puedas ver en qué estás gastando tu dinero, y así puedas tomar mejores decisiones financieras.
-+ **Análisis de balances:** Con la revolución de la Inteligencia Artifical, Segura Wallet te ofrece análisis detallados de tus balances, con gráficas y estadísticas que te ayudarán a entender de manera fácil y rápida cómo estás manejando tus finanzas personales, como también obtendrás recomendaciones personalizadas y pronósticos de tus finanzas, con lo que planear tu futuro financiero será más fácil que nunca.
+- **Un solo lugar para manejar todas tus cuentas:** Segura Wallet te permite sincronizae todas tus cuentas bancarias en la aplicación, con lo que podrás no solo ver el estado de todas tus cuentas en un solo vistazo, sino que también podrás realizar transferencias entre tus cuentas, a cuentas de otros usuarios de Segura, o a otras cuentas bancarias, sin importar si son de distintas instituciones financieras.
+- **Control de gastos:** Segura Wallet te permite categorizar tus gastos, para que puedas ver en qué estás gastando tu dinero, y así puedas tomar mejores decisiones financieras.
+- **Análisis de balances:** Con la revolución de la Inteligencia Artifical, Segura Wallet te ofrece análisis detallados de tus balances, con gráficas y estadísticas que te ayudarán a entender de manera fácil y rápida cómo estás manejando tus finanzas personales, como también obtendrás recomendaciones personalizadas y pronósticos de tus finanzas, con lo que planear tu futuro financiero será más fácil que nunca.
 
 ## Descripción del proyecto
 
@@ -59,10 +59,40 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
         </tr>
         <tr>
             <td>Perfil</td>
-            <td rowspan="2"><img src="imgs/profile1.jpeg" alt="Perfil"></td>
+            <td rowspan="2">
+            <img src="imgs/profile1.jpeg" alt="Perfil">
+            <img src="imgs/profile2.jpeg" alt="Perfil">
+            <img src="imgs/profile3.jpeg" alt="Perfil">
+            <img src="imgs/profile4.jpeg" alt="Perfil">
+            </td>
         </tr>
         <tr>
             <td><a href="#">/profile</a></td>
+        </tr>
+        <tr>
+            <td>Análisis</td>
+            <td rowspan="2">
+            <img src="imgs/analysis.jpeg" alt="Análisis"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/analysis</a></td>
+        </tr>
+        <tr>
+            <td>Pagar</td>
+            <td rowspan="2">
+            <img src="imgs/pay.jpeg" alt="Pagar"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/pay</a></td>
+        </tr>
+        <tr>
+            <td>Pagar a una otra cuenta de Segura Wallet</td>
+            <td rowspan="2">
+            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></td>
+            <img src="imgs/pay-segura-success.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/pay/segura</a></td>
         </tr>
     </tbody>
 </table>
