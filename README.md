@@ -60,10 +60,10 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
         <tr>
             <td>Perfil</td>
             <td rowspan="2">
-            <img src="imgs/profile1.jpeg" alt="Perfil">
-            <img src="imgs/profile2.jpeg" alt="Perfil">
-            <img src="imgs/profile3.jpeg" alt="Perfil">
-            <img src="imgs/profile4.jpeg" alt="Perfil">
+            Perfil: <img src="imgs/profile1.jpeg" alt="Perfil">
+            Cuentas bancarias: <img src="imgs/profile2.jpeg" alt="Perfil">
+            Seguridad: <img src="imgs/profile3.jpeg" alt="Perfil">
+            Notificaciones: <img src="imgs/profile4.jpeg" alt="Perfil">
             </td>
         </tr>
         <tr>
@@ -88,11 +88,39 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
         <tr>
             <td>Pagar a una otra cuenta de Segura Wallet</td>
             <td rowspan="2">
-            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></td>
+            Proceso:
+            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet">
+            Éxito:
             <img src="imgs/pay-segura-success.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></td>
         </tr>
         <tr>
             <td><a href="#">/pay/segura</a></td>
+        </tr>
+        <tr>
+            <td>Cuentas bancarias</td>
+            <td rowspan="2">
+            <img src="imgs/accounts.jpeg" alt="Cuentas bancarias"></td>
+        </tr>
+        <tr>
+            <td><a href="#">/accounts</a></td>
+        </tr>
+        <tr>
+            <td>Generalidades de la interfaz</td>
+            <td rowspan="2">
+            Barra de búsqueda:
+            <img src="imgs/searchbar.jpeg" alt="Barra de búsqueda">
+            Acerca de:
+            <img src="imgs/about.jpeg" alt="Acerca de">
+            Idioma:
+            <img src="imgs/language.jpeg" alt="Idioma">
+            Notificaciones:
+            <img src="imgs/notifications.jpeg" alt="Notificaciones">
+            Configuración de la cuenta:
+            <img src="imgs/account-config.jpeg" alt="Configuración de la cuenta">
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#">Todas las rutas</a></td>
         </tr>
     </tbody>
 </table>
