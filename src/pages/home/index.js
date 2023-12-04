@@ -228,12 +228,30 @@ const SamplePage = () => {
           </MainCard>
         </Grid>
         <Grid item xs={12} md={4}>
-          <MainCard title="Mis Contactos">
+          <MainCard
+            title={
+              <Grid container justifyContent="space-between" alignItems="center">
+                <Grid>Mis Contactos</Grid>
+                <Grid>
+                  <Button color="primary" variant="contained" size="small">
+                    Agregar Contacto
+                  </Button>
+                </Grid>
+              </Grid>
+            }
+          >
             <FollowerCard avatar={null} name="chus🐙" location="La Victoria, Venezuela" />
             <FollowerCard avatar={null} name="Leonel" location="Caracas, Venezuela" />
             <FollowerCard avatar={null} name="Waleria" location="Caracas, Venezuela" />
             <FollowerCard avatar={null} name="Panqueva" location="Charallave, Venezuela" />
             <FollowerCard avatar={null} name="Kami" location="Caracas, Venezuela" />
+            <Grid container justifyContent="center" alignItems="center" sx={{ mt: 2 }}>
+              <Grid>
+                <Button color="primary" fullWidth>
+                  Ver todos
+                </Button>
+              </Grid>
+            </Grid>
           </MainCard>
         </Grid>
       </Grid>

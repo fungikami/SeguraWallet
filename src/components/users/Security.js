@@ -1,6 +1,11 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import { Button, Grid, Stack, TextField, Typography } from '@mui/material';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 // project imports
 import SubCard from 'components/ui-component/cards/SubCard';
@@ -67,6 +72,35 @@ const Security = () => {
                       >
                         Desactivar cuenta
                       </Button>
+                    </AnimateButton>
+                  </Stack>
+                </Grid>
+              </Grid>
+            </SubCard>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item sm={6} md={12}>
+        <Grid container spacing={gridSpacing}>
+          <Grid item xs={12}>
+            <SubCard title="Verificación en dos pasos (2FA)">
+              <Grid container spacing={gridSpacing}>
+                <Grid item xs={12}>
+                  <TextField id="outlined-basic9" type="password" fullWidth label="Número de teléfono" />
+                </Grid>
+                <Grid item xs={12}>
+                  <FormControl>
+                    <FormLabel id="demo-row-radio-buttons-group-label">¿Cómo quieres obtener los códigos?</FormLabel>
+                    <RadioGroup row aria-labelledby="demo-row-radio-buttons-group-label" name="row-radio-buttons-group">
+                      <FormControlLabel value="sms" control={<Radio />} label="Mensaje de texto" />
+                      <FormControlLabel value="call" control={<Radio />} label="Llamada telefónica" />
+                    </RadioGroup>
+                  </FormControl>
+                </Grid>
+                <Grid item xs={12}>
+                  <Stack direction="row">
+                    <AnimateButton>
+                      <Button variant="contained">Activar 2FA</Button>
                     </AnimateButton>
                   </Stack>
                 </Grid>
