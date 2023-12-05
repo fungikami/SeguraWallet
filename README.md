@@ -89,9 +89,9 @@ Para correr el proyecto, se debe clonar el repositorio, instalar las dependencia
             <td>Pagar a una otra cuenta de Segura Wallet</td>
             <td rowspan="2">
             Proceso:</br>
-            <img src="imgs/pay-segura-success.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></br></td>
+            <img src="imgs/pay-segura-success.jpeg" alt="Pagar a otra cuenta de Segura Wallet"></br>
             Éxito:</br>
-            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></br>
+            <img src="imgs/pay-segura.jpeg" alt="Pagar a una otra cuenta de Segura Wallet"></br></td>
         </tr>
         <tr>
             <td><a href="#">/pay/segura</a></td>
