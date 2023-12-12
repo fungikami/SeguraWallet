@@ -18,6 +18,12 @@ import {
   TableHead,
   TableRow
 } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 import MonetizationOnTwoToneIcon from '@mui/icons-material/MonetizationOnTwoTone';
 import EuroIcon from '@mui/icons-material/Euro';
@@ -89,6 +95,17 @@ const SamplePage = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Page title="Inicio">
       <MainCard title="Balances">
@@ -233,9 +250,27 @@ const SamplePage = () => {
               <Grid container justifyContent="space-between" alignItems="center">
                 <Grid>Mis Contactos</Grid>
                 <Grid>
-                  <Button color="primary" variant="contained" size="small">
+                  <Button color="primary" variant="contained" size="small" onClick={handleClickOpen}>
                     Agregar Contacto
                   </Button>
+                  <Dialog open={open} onClose={handleClose}>
+                    <DialogTitle>Agregar Contacto</DialogTitle>
+                    <DialogContent>
+                      <DialogContentText>Agrega un contacto para que puedas enviarle dinero de forma rápida y segura.</DialogContentText>
+                      <TextField autoFocus margin="dense" id="name" label="Nombre" type="text" fullWidth variant="standard" />
+                      <TextField autoFocus margin="dense" id="name" label="Alias" type="text" fullWidth variant="standard" />
+                      <TextField autoFocus margin="dense" id="name" label="Ubicación" type="text" fullWidth variant="standard" />
+                      <TextField autoFocus margin="dense" id="name" label="Teléfono" type="number" fullWidth variant="standard" />
+                    </DialogContent>
+                    <DialogActions>
+                      <Button onClick={handleClose} variant="outlined">
+                        Cancelar
+                      </Button>
+                      <Button onClick={handleClose} variant="contained" color="primary">
+                        Agregar
+                      </Button>
+                    </DialogActions>
+                  </Dialog>
                 </Grid>
               </Grid>
             }
